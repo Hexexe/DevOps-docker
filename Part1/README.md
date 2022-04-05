@@ -168,3 +168,31 @@ Output
 [GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
 [GIN-debug] Listening and serving HTTP on :8080
 ```
+
+## Exercise 1.8: Image for script
+
+---
+
+<strong>[Dockerfile](ex1.8/Dockerfile)</strong>
+
+Command
+
+```console
+[dot@arch ex1.8]$ docker build . -t curler
+[dot@arch ex1.8]$ docker run -it curler
+```
+
+Input/Output
+
+```console
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
+</body></html>
+```
