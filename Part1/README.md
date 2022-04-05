@@ -30,13 +30,12 @@ c0a25c9b152e   nginx     "/docker-entrypoint.…"   55 seconds ago   Exited (0) 
 ```
 
 <br>
-<br>
 
 ## Exercise 1.2: Cleanup
 
 ---
 
-purge
+Cleanup containers & images
 
 ```console
 [dot@arch DevOpsDocker]$ docker stop $(docker ps -a -q)
