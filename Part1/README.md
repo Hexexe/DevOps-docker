@@ -97,3 +97,48 @@ Searching..
 <p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
 </body></html>
 ```
+
+<br>
+
+## Exercise 1.5: Sizes of images
+
+---
+
+Size
+
+```console
+[dot@arch DevOps-docker]$ docker images
+REPOSITORY                          TAG       IMAGE ID       CREATED         SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   12 months ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   12 months ago   15.7MB
+```
+
+Secret
+
+```console
+[dot@arch DevOps-docker]$ docker run -dit --rm --name alpine devopsdockeruh/simple-web-service:alpine
+[dot@arch DevOps-docker]$ docker exec alpine sh -c "tail -f ./text.log"
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+```
+
+<br>
+
+## Exercise 1.6: Hello Docker Hub
+
+---
+
+Command
+
+```console
+[dot@arch DevOps-docker]$ docker run -it devopsdockeruh/pull_exercise
+```
+
+Secret
+
+```console
+Give me the password: basics
+You found the correct password. Secret message is:
+"This is the secret message"
+```
+
+https://github.com/docker-hy/docs-exercise/blob/master/index.js
