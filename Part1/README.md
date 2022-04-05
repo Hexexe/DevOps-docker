@@ -38,7 +38,7 @@ c0a25c9b152e   nginx     "/docker-entrypoint.…"   55 seconds ago   Exited (0) 
 Cleanup containers & images
 
 ```console
-[dot@arch DevOpsDocker]$ docker rm -f $(docker ps -a -q)
+[dot@arch DevOpsDocker]$ docker rm -f $(docker ps -aq)
 [dot@arch DevOpsDocker]$ docker rmi c9
 ```
 
