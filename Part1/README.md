@@ -28,3 +28,27 @@ a341601b46f6   nginx     "/docker-entrypoint.…"   53 seconds ago   Up 51 secon
 1d5bc08d9236   nginx     "/docker-entrypoint.…"   54 seconds ago   Exited (0) 3 seconds ago             laughing_mahavira
 c0a25c9b152e   nginx     "/docker-entrypoint.…"   55 seconds ago   Exited (0) 8 seconds ago             jovial_babbage
 ```
+
+<br>
+<br>
+
+## Exercise 1.2: Cleanup
+
+---
+
+purge
+
+```console
+[dot@arch DevOpsDocker]$ docker stop $(docker ps -a -q)
+[dot@arch DevOpsDocker]$ docker rm $(docker ps -a -q)
+[dot@arch DevOpsDocker]$ docker rmi c9
+```
+
+Output
+
+```console
+[dot@arch DevOpsDocker]$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[dot@arch DevOpsDocker]$ docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+```
