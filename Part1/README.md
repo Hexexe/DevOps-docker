@@ -19,7 +19,7 @@ Stop 2 of the containers leaving 1 up.
 [dot@arch DevOpsDocker]$ docker stop 1d
 ```
 
-Submit the output for docker ps -a which shows 2 stopped containers and one running.
+Output
 
 ```console
 [dot@arch DevOpsDocker]$ docker ps -a
@@ -49,4 +49,23 @@ Output
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 [dot@arch DevOpsDocker]$ docker images
 REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+```
+
+<br>
+
+## Exercise 1.3: Secret message
+
+---
+
+Commands
+
+```console
+[dot@arch DevOpsDocker]$ docker run -dit --rm --name web devopsdockeruh/simple-web-service:ubuntu
+[dot@arch DevOpsDocker]$ docker exec -it web bash -c "tail -f ./text.log"
+```
+
+Secret Message
+
+```console
+Secret message is: 'You can find the source code here: https://github.com/
 ```
