@@ -142,3 +142,29 @@ You found the correct password. Secret message is:
 ```
 
 https://github.com/docker-hy/docs-exercise/blob/master/index.js
+
+## Exercise 1.7: Two line Dockerfile
+
+---
+
+<strong>[Dockerfile](ex1.7/Dockerfile)</strong>
+
+Command
+
+```console
+[dot@arch ex1.7]$ docker build . -t web-server
+[dot@arch ex1.7]$ docker run web-server
+```
+
+Output
+
+```console
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+```
