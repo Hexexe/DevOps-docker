@@ -69,3 +69,31 @@ Secret Message
 ```console
 Secret message is: 'You can find the source code here: https://github.com/
 ```
+
+<br>
+
+## Exercise 1.4: Missing dependencies
+
+---
+
+Commands
+
+```console
+[dot@arch DevOpsDocker]$ docker run -dit --name web ubuntu sh -c 'apt update; apt install -y curl; echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+[dot@arch DevOpsDocker]$ docker attach web
+```
+
+Input/Output
+
+```console
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
+</body></html>
+```
