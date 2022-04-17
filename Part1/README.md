@@ -238,3 +238,17 @@ Command
 ```
 
 ![alt text](ex1.11/spring.png)
+
+## Exercise 1.12: Hello, frontend!
+
+---
+
+<strong>[Dockerfile](ex1.12/Dockerfile)</strong>
+
+Command
+
+```console
+[dot@arch example-frontend]$ docker build . -t node-front && docker run -d --rm --name example-front -p 5000:5000 node-front
+```
+
+![alt text](ex1.12/front.png)
