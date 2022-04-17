@@ -266,3 +266,19 @@ Command
 ```
 
 ![alt text](ex1.13/ping.png)
+
+## Exercise 1.14: Environment
+
+---
+
+<strong>[Dockerfile Front](ex1.12/Dockerfile)</strong><br>
+<strong>[Dockerfile Back](ex1.13/Dockerfile)</strong>
+
+Commands
+
+```console
+[dot@arch example-frontend]$ docker build . -t node-front && docker run -d --rm --name example-front -p 5000:5000 node-front
+[dot@arch example-backend]$ docker build . -t golang && docker run -d --rm --name example-back -p 8080:8080 golang
+```
+
+![alt text](ex1.14/env.png)
