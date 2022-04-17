@@ -224,3 +224,17 @@ ae5f2dbaef8c   curler       "/bin/sh -c ./script…"   12 days ago     Exited (0
 ```
 
 ![alt text](ex1.10/browser.png)
+
+## Exercise 1.11: Spring
+
+---
+
+<strong>[Dockerfile](ex1.11/Dockerfile)</strong>
+
+Command
+
+```console
+[dot@arch spring-example-project]$ docker build . -t java-spring && docker run -d --rm --name spring -p 8080:8080 java-spring
+```
+
+![alt text](ex1.11/spring.png)
