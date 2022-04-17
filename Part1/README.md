@@ -196,3 +196,32 @@ Searching..
 <p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
 </body></html>
 ```
+
+## Exercise 1.9: Volumes
+
+---
+
+Command
+
+```console
+[dot@arch DevOpsDocker]$ touch text.log
+[dot@arch DevOpsDocker]$ docker run -d --name spammer --rm -v $(pwd)/text.log:/usr/src/app/text.log devopsdockeruh/simple-web-service
+```
+
+## Exercise 1.10: Ports open
+
+---
+
+Command
+
+```console
+[dot@arch DevOpsDocker]$ docker run -d --rm --name web -p 3000:8080 web-server
+b38480db9b1b3abe861104b6ecdc94f83f88c2de0e60f1d961091045b02b9e53
+[dot@arch DevOpsDocker]$ docker ps -a
+CONTAINER ID   IMAGE        COMMAND                  CREATED         STATUS                   PORTS                    NAMES
+b38480db9b1b   web-server   "/usr/src/app/server…"   3 seconds ago   Up 2 seconds             0.0.0.0:3000->8080/tcp   web
+ae5f2dbaef8c   curler       "/bin/sh -c ./script…"   12 days ago     Exited (0) 12 days ago                            peaceful_matsumoto
+[dot@arch DevOpsDocker]$
+```
+
+![alt text](ex1.10/browser.png)
