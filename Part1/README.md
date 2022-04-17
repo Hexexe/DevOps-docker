@@ -252,3 +252,17 @@ Command
 ```
 
 ![alt text](ex1.12/front.png)
+
+## Exercise 1.13: Hello, backend!
+
+---
+
+<strong>[Dockerfile](ex1.13/Dockerfile)</strong>
+
+Command
+
+```console
+[dot@arch example-backend]$ docker build . -t golang && docker run -d --rm --name example-back -p 8080:8080 golang
+```
+
+![alt text](ex1.13/ping.png)
