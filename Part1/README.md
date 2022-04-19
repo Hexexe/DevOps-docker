@@ -304,3 +304,8 @@ After that go to localhost:3000
 
 Project source code <strong>[Here](https://github.com/Hexexe/cat) </strong>
 
+## Exercise 1.16: Heroku
+
+---
+
+<strong>[Heroku link](https://infinite-wave-30786.herokuapp.com/) </strong><br>
