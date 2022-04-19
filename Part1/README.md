@@ -282,3 +282,25 @@ Commands
 ```
 
 ![alt text](ex1.14/env.png)
+
+## Exercise 1.15: Homework
+
+---
+
+<strong>[Dockerhub link](https://hub.docker.com/r/hexexe/cats) </strong><br>
+
+Simple React-app that fetches images of cats when you press a button.
+
+<br>
+
+Example command to run:
+
+```console
+docker run -d -p 3000:3000 hexexe/cats
+```
+
+After that go to localhost:3000
+
+
+Project source code <strong>[Here](https://github.com/Hexexe/cat) </strong>
+
